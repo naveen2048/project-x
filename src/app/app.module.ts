@@ -9,7 +9,7 @@ import { Components } from "./components/index";
 
 @NgModule({
   declarations: [AppComponent, Components],
-  imports: [BrowserModule, FormsModule, RouterModule.forRoot(rootRoutes)],
+  imports: [BrowserModule, FormsModule, RouterModule.forRoot(rootRoutes, {useHash:true})],
   providers: [],
   bootstrap: [AppComponent]
 })
