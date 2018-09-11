@@ -6,9 +6,10 @@ import { RouterModule } from "@angular/router";
 import { AppComponent } from "./app.component";
 import { rootRoutes } from "./app.routing";
 import { Components } from "./components/index";
+import { ImgDirective } from './directives/image-loading.directive';
 
 @NgModule({
-  declarations: [AppComponent, Components],
+  declarations: [AppComponent, Components, ImgDirective],
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(rootRoutes, {useHash:true})],
   providers: [],
   bootstrap: [AppComponent]
