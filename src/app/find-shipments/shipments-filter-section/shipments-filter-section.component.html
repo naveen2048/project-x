@@ -1,11 +1,303 @@
-
-  <div class="col-xs-2 filterSection">
-    <div class="row form-group">
-      <label>Collection</label>
-      <input type="text" class="form-control">
-    </div>
-    <div class="row form-group">
-        <label>Delivery</label>
-        <input type="text" class="form-control">
-      </div>
+<div class="col-xs-3 filterSection">
+  <div class="row form-group">
+    <label>Collection</label>
+    <input type="text" autocorrect="off" autocapitalize="off" spellcheck="off" #FromLocation class="form-control">
   </div>
+  <div class="row form-group">
+    <label>Delivery</label>
+    <input type="text" autocorrect="off" autocapitalize="off" spellcheck="off" #ToLocation class="form-control">
+  </div>
+
+  <div class="accordion" id="accordionExample">
+
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default" id="cats">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#Categories">
+              Categories
+
+            </a>
+            <br>
+            <span>All Categoies</span>
+          </h4>
+        </div>
+        <div id="Categories" class="panel-collapse collapse">
+          <div class="panel-body">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#cats" href="#cat1">
+                    Vehicles & Boats
+                  </a>
+                </h4>
+              </div>
+              <div id="cat1" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <input type="checkbox" name="vehicle" value="Bike"> I have a bike
+                  <br>
+                  <input type="checkbox" name="1"> Cars & Light Trucks
+                  <br>
+                  <input type="checkbox"> Motorcycles & Mopeds
+
+                  <br>
+                  <input type="checkbox"> ATVs & Power Sports
+
+                  <br>
+                  <input type="checkbox"> Caravans & Campers
+
+                  <br>
+                  <input type="checkbox"> Trailers & Other Vehicles
+
+                  <br>
+                  <input type="checkbox"> Airplanes
+
+                  <br>
+                  <input type="checkbox"> Power Boats
+                </div>
+              </div>
+            </div>
+            <input type="checkbox">Plant & Heavy Equipment
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#cats" href="#cat2">
+                    Moves
+                  </a>
+                </h4>
+              </div>
+              <div id="cat2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <input type="checkbox" name="vehicle" value="Bike"> I have a bike
+                  <br>
+                  <input type="checkbox" name="1"> Cars & Light Trucks
+                  <br>
+                  <input type="checkbox"> Motorcycles & Mopeds
+
+                  <br>
+                  <input type="checkbox"> ATVs & Power Sports
+
+                  <br>
+                  <input type="checkbox"> Caravans & Campers
+
+                  <br>
+                  <input type="checkbox"> Trailers & Other Vehicles
+
+                  <br>
+                  <input type="checkbox"> Airplanes
+
+                  <br>
+                  <input type="checkbox"> Power Boats
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#cats" href="#cat3">
+                    Freight
+                  </a>
+                </h4>
+              </div>
+              <div id="cat3" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <input type="checkbox" name="vehicle" value="Bike"> I have a bike
+                  <br>
+                  <input type="checkbox" name="1"> Cars & Light Trucks
+                  <br>
+                  <input type="checkbox"> Motorcycles & Mopeds
+
+                  <br>
+                  <input type="checkbox"> ATVs & Power Sports
+
+                  <br>
+                  <input type="checkbox"> Caravans & Campers
+
+                  <br>
+                  <input type="checkbox"> Trailers & Other Vehicles
+
+                  <br>
+                  <input type="checkbox"> Airplanes
+
+                  <br>
+                  <input type="checkbox"> Power Boats
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#cats" href="#cat4">
+                    Animals
+                  </a>
+                </h4>
+              </div>
+              <div id="cat4" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <input type="checkbox" name="vehicle" value="Bike"> I have a bike
+                  <br>
+                  <input type="checkbox" name="1"> Cars & Light Trucks
+                  <br>
+                  <input type="checkbox"> Motorcycles & Mopeds
+
+                  <br>
+                  <input type="checkbox"> ATVs & Power Sports
+
+                  <br>
+                  <input type="checkbox"> Caravans & Campers
+
+                  <br>
+                  <input type="checkbox"> Trailers & Other Vehicles
+
+                  <br>
+                  <input type="checkbox"> Airplanes
+
+                  <br>
+                  <input type="checkbox"> Power Boats
+                </div>
+              </div>
+            </div>
+            <input type="checkbox">Others
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#Weight">
+              Weight
+            </a>
+            <br>
+            <span>All Weights</span>
+          </h4>
+        </div>
+        <div id="Weight" class="panel-collapse collapse">
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-xs-5">
+                <label>Min</label>
+
+              </div>
+
+              <div class="col-xs-5">
+                <label>Max</label>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-5">
+
+                <input type="text" value="Min" style="width:100%">
+              </div>
+              <div class="col-xs-2"> - </div>
+              <div class="col-xs-5">
+
+                <input type="text" value="Max" style="width:100%">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4">
+
+                <input type="radio" name="measure" value="lbs">lbs
+              </div>
+              <div class="col-xs-4">
+                <input type="radio" name="measure" value="kg">kg</div>
+              <div class="col-xs-4">
+
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+
+
+              </div>
+              <div class="col-xs-4">
+                <div class="col-xs-2">
+
+                  <input type="button" value="Apply">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#PricingType">
+                Pricing Type
+              </a>
+            </h4>
+          </div>
+          <div id="PricingType" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="row">
+                <input type="checkbox">Listing</div>
+              <div class="row">
+                <input type="checkbox">Offer</div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#LocationType">
+                Location Type
+              </a>
+              <span>All Location Type</span>
+            </h4>
+          </div>
+
+
+
+          <div id="LocationType" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="row">
+                <input type="checkbox"> Residence / Home Business</div>
+              <div class="row">
+                <input type="checkbox">Business (with loading bay or forklift)
+              </div>
+              <div class="row">
+                <input type="checkbox">Business (without loading bay or forklift)
+              </div>
+              <div class="row">
+                <input type="checkbox">Port</div>
+              <div class="row">
+                <input type="checkbox">Construction Site</div>
+              <div class="row">
+                <input type="checkbox">Trade Show / Exhibition</div>
+              <div class="row">
+                <input type="checkbox">Storage Facility</div>
+              <div class="row">
+                <input type="checkbox">Military Base</div>
+              <div class="row">
+                <input type="checkbox">Airport</div>
+              <div class="row">
+                <input type="checkbox">Other Secured or Limited Access Loc</div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#ListedBy">
+                Listed By
+              </a>
+
+            </h4>
+          </div>
+          <div id="ListedBy" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="row">
+                <input type="checkbox">Customer</div>
+              <div class="row">
+                <input type="checkbox">Broker</div>
+              <div class="row">
+                <input type="checkbox">eBay</div>
+              <div class="row">
+                <input type="checkbox">Ritche Bros</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
