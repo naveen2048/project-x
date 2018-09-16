@@ -12,6 +12,7 @@ export class ImgDirective {
   
     @HostListener('load', ['$event'])
     onLoad() {
+      alert("test");
       this.element.nativeElement.src = this.imgDirective;
     }
   }

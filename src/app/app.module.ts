@@ -9,7 +9,7 @@ import { Components } from "./components/index";
 import { ImgDirective } from './directives/image-loading.directive';
 
 @NgModule({
-  declarations: [AppComponent, Components, ImgDirective],
+  declarations: [AppComponent, Components],
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(rootRoutes, {useHash:true})],
   providers: [],
   bootstrap: [AppComponent]
