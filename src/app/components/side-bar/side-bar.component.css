@@ -1,0 +1,10 @@
+.sidebar {
+    height: 10vh !important;
+}
+
+.sidecontent {
+    height: 100%;
+}
+.ng-sidebar  {
+    position: absolute !important;
+}

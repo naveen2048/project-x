@@ -1,16 +1,16 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-4" *ngFor="let x of data" activeSection>
+    <div class="col-xs-4 text-center" *ngFor="let x of data" activeSection>
       <a href="" target="">
         <div class="row">
           <div class="col-xs-12">
-            <img src="" imgDirective="../../../assets/images/loading.gif" height="100" width="100" class="categoryThumb">
+            <img src="../../../assets/images/car.png" imgDirective="../../../assets/images/loading.gif" height="100" width="100" class="categoryThumb">
           </div>
           <div class="col-xs-12">
-            <span class="categoryProd">Title</span>
+           <h3><span class="categoryProd">{{x.categoryName}}</span></h3>
           </div>
           <div class="col-xs-12">
-            <p class="categoryDes">Description</p>
+            <p class="categoryDes">{{x.description}}</p>
           </div>
         </div>
       </a>
