@@ -4,8 +4,10 @@
 
 #top-bar.animated-header {
     padding: 20px 0;
-    background: #414141;
-    box-shadow: none;
+    background: #ffffff;
+    -webkit-box-shadow: none;
+    box-shadow: 0 3px 4px 0.08px rgba(0, 0, 0, 0.2);
+    color: #222222;
 }
 #top-bar {
     background: #fff;
@@ -101,10 +103,10 @@ ul li {
     margin-top: 2.5rem;
 } */
 .filterSection {
-    background: #414141;
+    background: #fff;
     color: #ffffff;
     padding: 3rem;
 }
 a {
-    color: white;
+    color: #222222;
 }
