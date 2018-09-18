@@ -1,7 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 
+body{
+    line-height: 2.4rem;
+    letter-spacing: 0.085rem;
+}
 #top-bar.animated-header {
     padding: 20px 0;
     background: #ffffff;
@@ -85,14 +90,13 @@ ul li {
     background: #dddddd;
     padding:2rem;
 }
-.CategoryBlock:hover {
+/* .CategoryBlock:hover {
     background: #ffffff;
 }
 .CategoryBlock {
     padding: 5px;
     background: #cccccc;
-    /* margin: 1px; */
-}
+} */
 .searchResult .row {
     border: 1px solid #bbb;
     padding: 4rem;
@@ -109,4 +113,7 @@ ul li {
 }
 a {
     color: #222222;
+}
+.margin-l-14{
+    margin-left: 14rem;
 }

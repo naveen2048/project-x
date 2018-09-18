@@ -8,7 +8,7 @@ import { HighLightDirective } from '../../directives/section-highlighter.directi
   styleUrls: ['./new-shipments.component.css']
 })
 export class NewShipmentsComponent implements OnInit {
-  data:any[] = [1,2,3];
+  data:any[] = [1,2,3,4,5,6];
 
   constructor() { }
 
