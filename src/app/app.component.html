@@ -1,7 +1,7 @@
 <div class="mainBody">
   <div class="container-fluid">
     <div class="row">
-      <app-header></app-header>
+      <app-header (toggleMenu)="toggleMenu($event)"></app-header>
     </div>
     <section class="subDiv">
       <router-outlet></router-outlet>
@@ -11,3 +11,4 @@
   </div> -->
   </div>
 </div>
+<app-side-bar [@slideInOut]="menuState"></app-side-bar>

@@ -7,6 +7,7 @@ import { AppComponent } from "./app.component";
 import { rootRoutes } from "./app.routing";
 import { Components } from "./components/index";
 import { ImgDirective } from "./directives/image-loading.directive";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //3rd party libraries
 import { SidebarModule } from "ng-sidebar";
@@ -16,6 +17,7 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
   declarations: [AppComponent, Components, SideBarComponent],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     RouterModule.forRoot(rootRoutes, { useHash: true }),
     SidebarModule.forRoot()
