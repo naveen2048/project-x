@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row margin-l-14">
     <div class="col-xs-3 Primary-Category" *ngFor="let x of data" activeSection>
-      <a href="" target="">
+      <a [routerLink]="[x.navigate]">
         <div class="row text-center">
           <div class="col-xs-12">
             <!-- <img src="" imgDirective="../../../assets/images/loading.gif" height="100" width="100" class="categoryThumb"> -->

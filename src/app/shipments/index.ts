@@ -4,10 +4,12 @@ import { RouterModule } from '@angular/router';
 
 import { ShipmentsComponent } from "./shipments/shipments.component";
 import { NewShipmentsComponent } from "./new-shipments/new-shipments.component";
+
 import { HighLightDirective } from '../directives/section-highlighter.directive';
 import { ImgDirective } from "../directives/image-loading.directive";
+import { ShipComponent } from "./ship/ship.component";
 
-export const Components = [ShipmentsComponent, NewShipmentsComponent, HighLightDirective];
+export const Components = [ShipmentsComponent, NewShipmentsComponent, HighLightDirective, ShipComponent];
 
 @NgModule({
   imports: [CommonModule, RouterModule],
