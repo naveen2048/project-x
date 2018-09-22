@@ -1,0 +1,24 @@
+.CategoryBlock {
+    text-align: center;
+}
+.Primary-Category {
+    min-height: 150px;
+    border: 1px solid #ffffff;
+    padding: 30px 0 0 0;
+    margin: 20px;
+    box-shadow: 0px 2px 4px 1px #222;
+    border-radius:10px; 
+    background: #ffffff;
+}
+.categoryTitle {
+    font-size: 22px;
+    line-height: 5rem;
+    color: #757575;
+}
+.fa-10x{
+    font-size: 10rem;
+}
+a:focus, a:hover {
+    color: #8cddcd;
+    text-decoration: underline;
+} 

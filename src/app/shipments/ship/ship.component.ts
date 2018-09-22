@@ -1,19 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
+import { ICategoryType, CategoryTypes } from "../../models/categories.model";
 
 @Component({
-  selector: 'app-ship',
-  templateUrl: './ship.component.html',
-  styleUrls: ['./ship.component.css']
+  selector: "app-ship",
+  templateUrl: "./ship.component.html",
+  styleUrls: ["./ship.component.css"]
 })
 export class ShipComponent implements OnInit {
-  type:string;
+  type: string;
+  data: ICategoryType[] = CategoryTypes;
 
-  constructor(private route:ActivatedRoute) { 
-    this.type = this.route.snapshot.params.d;
+  constructor(private route: ActivatedRoute) {
+    this.data = this.data.filter(p => p.Category === this.route.snapshot.params.d); //this.route.snapshot.params.d;
   }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

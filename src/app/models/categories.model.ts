@@ -49,3 +49,39 @@ export const categories = [
     icon: "fa fa-truck fa-10x"
   }
 ];
+
+export const CategoryTypes: ICategoryType[] = [
+  {
+    Category:"pe",
+    categoryName: "Dogs",
+    uid: "1",
+    description: "",
+    navigate: "/new-shipment/ship/vb",
+    icon: "fa fa-dove fa-10x"
+  },
+  {
+    Category:"pe",
+    categoryName: "Birds",
+    uid: "2",
+    description: "",
+    navigate: "/new-shipment/ship/vb",
+    icon: "fa fa-dove fa-10x"
+  },
+  {
+    Category:"vb",
+    categoryName: "Boat",
+    uid: "3",
+    description: "",
+    navigate: "/new-shipment/ship/vb",
+    icon: "fa fa-dove fa-10x"
+  }
+];
+
+export interface ICategoryType {
+    Category:string,
+    categoryName: string,
+    uid: string,
+    description: string,
+    navigate: string,
+    icon: string
+}
