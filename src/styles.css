@@ -7,11 +7,18 @@ body{
 }
 #top-bar.animated-header {
     padding: 20px 0;
-    background: #ffffff;
+    background: #212b5a;
     -webkit-box-shadow: none;
     box-shadow: 0 3px 4px 0.08px rgba(0, 0, 0, 0.2);
     color: #222222;
 }
+.navbar-nav a {
+    color: #ffffff;
+    font-size: 3rem;
+    }
+    .nav>li>a:focus, .nav>li>a:hover{
+        background-color: #fdb706;
+    }
 #top-bar {
     background: #fff;
     color: #fff;
@@ -85,7 +92,7 @@ ul li {
     margin-top: 11rem;
 }
 .mainBody{
-    background: #dddddd;
+    background: #fdb706;
     padding:2rem;
 }
 /* .CategoryBlock:hover {
@@ -114,4 +121,8 @@ a {
 }
 .margin-l-14{
     margin-left: 14rem;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 8d94b85c8f630af5470453753c64cdc264ce106c
