@@ -12,9 +12,7 @@ import { categories } from '../../models/categories.model';
 })
 export class NewShipmentsComponent implements OnInit {
   data:any[] = categories;
-
   constructor() { }
-
   ngOnInit() {
   }
 
