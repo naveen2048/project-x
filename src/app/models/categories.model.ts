@@ -2,52 +2,52 @@ export const categories = [
   {
     categoryName: "Vehicles & Boats",
     uid: "1",
-    description: "",
+    description: "Loren ipsum",
     navigate: "/new-shipment/ship/vb",
     icon: "fa fa-truck fa-10x"
   },
   {
     categoryName: "Home Appliances",
     uid: "2",
-    description: "",
+    description: "Loren ipsum",
     navigate: "/new-shipment/ship/hp",
     icon: "fa fa-truck fa-10x"
   },
   {
     categoryName: "Home Movement",
     uid: "3",
-    description: "",
+    description: "Loren ipsum",
     navigate: "/new-shipment/ship/hm",
     icon: "fa fa-truck fa-10x"
   },
   {
     categoryName: "Heavy Equipment",
     uid: "4",
-    description: "",
+    description: "Loren ipsum",
     navigate: "/new-shipment/ship/he",
     icon: "fa fa-truck fa-10x"
   },
   {
     categoryName: "Freight",
     uid: "5",
-    description: "",
+    description: "Loren ipsum",
     navigate: "/new-shipment/ship/fr",
     icon: "fa fa-truck fa-10x"
   },
   {
     categoryName: "Pets",
     uid: "6",
-    description: "",
+    description: "Loren ipsum",
     navigate: "/new-shipment/ship/pe",
     icon: "fa fa-paw fa-10x"
   },
-  {
-    categoryName: "Others",
-    uid: "7",
-    description: "",
-    navigate: "/new-shipment/ship/ot",
-    icon: "fa fa-truck fa-10x"
-  }
+  // {
+  //   categoryName: "Others",
+  //   uid: "7",
+  //   description: "",
+  //   navigate: "/new-shipment/ship/ot",
+  //   icon: "fa fa-truck fa-10x"
+  // }
 ];
 
 export const CategoryTypes: ICategoryType[] = [
