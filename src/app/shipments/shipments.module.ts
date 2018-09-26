@@ -14,6 +14,6 @@ import { ShipmentInformationComponent } from './shipment-information/shipment-in
     ShipmentsComponentsModule,
     RouterModule.forChild(ShipmentsRoutes)
   ],
-  declarations: [ShipmentInformationComponent]
+  declarations: []
 })
 export class ShipmentsModule { }
