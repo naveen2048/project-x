@@ -1,0 +1,13 @@
+@import "//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+
+.card {
+  padding-top: 45px !important;
+}
+
+.tabs__panel {
+  background-color: white !important;
+}
+
+tabs__tab-bar {
+  align-self: flex-start !important;
+}

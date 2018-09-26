@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from '@angular/router';
 
@@ -10,6 +10,8 @@ import { ImgDirective } from "../directives/image-loading.directive";
 import { ShipComponent } from "./ship/ship.component";
 import { ShipmentInformationComponent } from './shipment-information/shipment-information.component';
 import { PickInformationComponent } from './pick-information/pick-information.component';
+import { ShipListingComponent } from './ship-listing/ship-listing.component';
+import { TabModule } from "angular-tabs-component";
 
 export const Components = [
   ShipmentsComponent, 
@@ -17,12 +19,14 @@ export const Components = [
   HighLightDirective, 
   ShipComponent,
   ShipmentInformationComponent,
-  PickInformationComponent
+  PickInformationComponent,
+  ShipListingComponent
 ];
 
 @NgModule({
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, TabModule],
   declarations: [Components],
-  exports: [Components]
+  exports: [Components],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ShipmentsComponentsModule {}
