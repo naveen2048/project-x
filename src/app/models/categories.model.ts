@@ -56,7 +56,7 @@ export const CategoryTypes: ICategoryType[] = [
     categoryName: "Dogs",
     uid: "1",
     description: "",
-    navigate: "/new-shipment/ship/vb",
+    navigate: "/new-shipment/ship-info/dogs",
     icon: "fa fa-dove fa-10x"
   },
   {
@@ -64,7 +64,7 @@ export const CategoryTypes: ICategoryType[] = [
     categoryName: "Birds",
     uid: "2",
     description: "",
-    navigate: "/new-shipment/ship/vb",
+    navigate: "/new-shipment/ship-info/bird",
     icon: "fa fa-dove fa-10x"
   },
   {
