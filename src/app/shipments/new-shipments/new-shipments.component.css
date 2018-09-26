@@ -3,10 +3,10 @@
 }
 .Primary-Category {
     min-height: 150px;
-    border: 1px solid #ffffff;
+    border: 5px solid #ffffff;
     padding: 30px 0 0 0;
     margin: 20px;
-    box-shadow: 0px 2px 4px 1px #222;
+    box-shadow: 0px 2px 4px 1px #fff;
     border-radius:10px; 
     background: #212b5a;
 }
@@ -22,12 +22,18 @@ a:focus, a:hover {
     color: #8cddcd;
     text-decoration: underline;
 }
-.fa-truck:before{
+/* .fa-truck:before{
     color: #fff;
-}
+} */
 .Primary-Category a {
     color: #ffffff;
 }
 .Primary-Category a:hover {
-    color: #8cddcd;
+    color: #212b5a;
+}
+
+.Primary-Category:hover {
+    background: #fdb706;
+    border: 5px solid #212b5a;
+    box-shadow: 0px 2px 4px 1px #212b5a;
 }
