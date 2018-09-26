@@ -6,7 +6,6 @@ import { ShipmentsRoutes } from './shipment-routing';
 import { ImgDirective } from '../directives/image-loading.directive';
 import { HighLightDirective } from '../directives/section-highlighter.directive';
 import { Components } from './index';
-import { ShipmentInformationComponent } from './shipment-information/shipment-information.component';
 
 @NgModule({
   imports: [

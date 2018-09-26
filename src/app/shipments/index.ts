@@ -9,13 +9,15 @@ import { HighLightDirective } from '../directives/section-highlighter.directive'
 import { ImgDirective } from "../directives/image-loading.directive";
 import { ShipComponent } from "./ship/ship.component";
 import { ShipmentInformationComponent } from './shipment-information/shipment-information.component';
+import { PickInformationComponent } from './pick-information/pick-information.component';
 
 export const Components = [
   ShipmentsComponent, 
   NewShipmentsComponent, 
   HighLightDirective, 
   ShipComponent,
-  ShipmentInformationComponent
+  ShipmentInformationComponent,
+  PickInformationComponent
 ];
 
 @NgModule({
