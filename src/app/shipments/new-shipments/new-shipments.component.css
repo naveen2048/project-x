@@ -8,12 +8,12 @@
     margin: 20px;
     box-shadow: 0px 2px 4px 1px #222;
     border-radius:10px; 
-    background: #ffffff;
+    background: #212b5a;
 }
 .categoryTitle {
     font-size: 22px;
     line-height: 5rem;
-    color: #757575;
+    color: #fff;
 }
 .fa-10x{
     font-size: 10rem;
@@ -21,4 +21,13 @@
 a:focus, a:hover {
     color: #8cddcd;
     text-decoration: underline;
+}
+.fa-truck:before{
+    color: #fff;
+}
+.Primary-Category a {
+    color: #ffffff;
+}
+.Primary-Category a:hover {
+    color: #8cddcd;
 }
