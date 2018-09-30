@@ -152,3 +152,16 @@ a {
 .testStyle{
     color:red;
 }
+/*Start of Tab styles*/
+li.tabs__tab.active.ng-star-inserted {
+    background-color: #212b5a !important;
+}
+li.tabs__tab {
+    padding: 10px !important;
+}
+tab {
+    margin-top: 10px;
+}
+.tabs__panel {
+    background-color: #fff !important;
+}
