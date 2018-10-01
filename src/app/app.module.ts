@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //3rd party libraries
 import { SidebarModule } from "ng-sidebar";
 import { SideBarComponent } from './components/side-bar/side-bar.component';
+import { Ng5BreadcrumbModule, BreadcrumbService } from 'ng5-breadcrumb';
 
 @NgModule({
   declarations: [AppComponent, Components, SideBarComponent],
@@ -19,6 +20,7 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    Ng5BreadcrumbModule.forRoot(),
     RouterModule.forRoot(rootRoutes, { useHash: true }),
     SidebarModule.forRoot()
   ],

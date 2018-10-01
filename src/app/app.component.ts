@@ -1,4 +1,5 @@
 import {Component, trigger, state, style, transition, animate} from '@angular/core';
+import { BreadcrumbService } from 'ng5-breadcrumb';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +22,8 @@ export class AppComponent {
   title = 'app';
 
   menuState:string = 'out';
+
+  constructor(private breadCumService:BreadcrumbService){}
 
   toggleMenu(event) {
     // 1-line if statement that toggles the value:
