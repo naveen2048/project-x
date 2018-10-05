@@ -12,6 +12,9 @@ import { ShipmentInformationComponent } from './shipment-information/shipment-in
 import { PickInformationComponent } from './pick-information/pick-information.component';
 import { ShipListingComponent } from './ship-listing/ship-listing.component';
 import { TabModule } from "angular-tabs-component";
+import { WhatAreYouShippingComponent } from "./what-are-you-shipping/what-are-you-shipping.component";
+import { HeaderTitleComponent } from '../shared/header-title';
+import { ToggleButton } from '../shared/toggle-button';
 
 export const Components = [
   ShipmentsComponent, 
@@ -20,7 +23,10 @@ export const Components = [
   ShipComponent,
   ShipmentInformationComponent,
   PickInformationComponent,
-  ShipListingComponent
+  ShipListingComponent,
+  WhatAreYouShippingComponent,
+  HeaderTitleComponent,
+  ToggleButton
 ];
 
 @NgModule({

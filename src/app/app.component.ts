@@ -1,4 +1,4 @@
-import {Component, trigger, state, style, transition, animate} from '@angular/core';
+import {Component, trigger, state, style, transition, animate, OnInit} from '@angular/core';
 import { BreadcrumbService } from 'ng5-breadcrumb';
 
 @Component({
@@ -18,15 +18,25 @@ import { BreadcrumbService } from 'ng5-breadcrumb';
     ]),
   ]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'app';
 
   menuState:string = 'out';
 
   constructor(private breadCumService:BreadcrumbService){}
 
+  ngOnInit() {
+    this.BreadCumFiendlyNames();
+  }
+
   toggleMenu(event) {
     // 1-line if statement that toggles the value:
     this.menuState = event === 'out' ? 'in' : 'out';
+  }
+
+  BreadCumFiendlyNames() {
+    this.breadCumService.addFriendlyNameForRoute("/home","Home");
+    this.breadCumService.addFriendlyNameForRoute("/find-shipments","Find Shipments");
+    this.breadCumService.addFriendlyNameForRoute("/new-shipment","New Shipment");
   }
 }

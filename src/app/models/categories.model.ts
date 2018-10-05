@@ -74,6 +74,14 @@ export const CategoryTypes: ICategoryType[] = [
     description: "",
     navigate: "/new-shipment/ship/vb",
     icon: "fa fa-dove fa-10x"
+  },
+  {
+    Category:"vb",
+    categoryName: "Cars & Light trucks",
+    uid: "4",
+    description: "",
+    navigate: "/new-shipment/what-you-shipping/cars",
+    icon: "fa fa-car fa-10x"
   }
 ];
 
