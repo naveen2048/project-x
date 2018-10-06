@@ -100,7 +100,7 @@ ul li {
     margin-top: 11rem;
 }
 .mainBody{
-    background: #fdb706;
+    background: #F4F4F4; /*#fdb706;*/
     padding:2rem;
 }
 /* .CategoryBlock:hover {
