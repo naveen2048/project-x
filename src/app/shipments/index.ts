@@ -15,6 +15,7 @@ import { TabModule } from "angular-tabs-component";
 import { WhatAreYouShippingComponent } from "./what-are-you-shipping/what-are-you-shipping.component";
 import { HeaderTitleComponent } from '../shared/header-title';
 import { ToggleButton } from '../shared/toggle-button';
+import { LocationSearchComponent } from '../shared/location-search';
 
 export const Components = [
   ShipmentsComponent, 
@@ -26,7 +27,8 @@ export const Components = [
   ShipListingComponent,
   WhatAreYouShippingComponent,
   HeaderTitleComponent,
-  ToggleButton
+  ToggleButton,
+  LocationSearchComponent
 ];
 
 @NgModule({

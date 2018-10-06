@@ -1,58 +1,90 @@
-<div class="container row">
-    <app-header-title title="What are you shipping?"></app-header-title>
+<div class="container">
     <div class="row">
-        <div class="col-sm-4">
-            <div class="form-group">
-                <label class="control-label" for="Company">Year</label>
-                <select id="Company" class="form-control" name="Company">
-                    <option value="small">2018</option>
-                    <option value="medium">2017</option>
-                    <option value="large">2016</option>
-                </select>
+        <app-header-title title="What are you shipping?"></app-header-title>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label class="control-label" for="Company">Year</label>
+                    <select id="Company" class="form-control" name="Company">
+                        <option value="small">2018</option>
+                        <option value="medium">2017</option>
+                        <option value="large">2016</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label class="control-label" for="Company">Making</label>
+                    <select id="Company" class="form-control" name="Company">
+                        <option value="small">Alfa Romeo</option>
+                        <option value="medium">BMW</option>
+                        <option value="large">Honda</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label class="control-label" for="Company">Model</label>
+                    <select id="Company" class="form-control" name="Company">
+                        <option value="small">X9</option>
+                        <option value="medium">320 D</option>
+                        <option value="large">HL350</option>
+                    </select>
+                </div>
             </div>
         </div>
-        <div class="col-sm-4">
-            <div class="form-group">
-                <label class="control-label" for="Company">Making</label>
-                <select id="Company" class="form-control" name="Company">
-                    <option value="small">Alfa Romeo</option>
-                    <option value="medium">BMW</option>
-                    <option value="large">Honda</option>
-                </select>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="col-sm-6 text-right">
+                    Running Condition
+                </div>
+                <div class="col-sm-6">
+                    <toggle-button [(toggled)]="Options.runningCondition"></toggle-button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-6 text-right">
+                    Open Top
+                </div>
+                <div class="col-sm-6">
+                    <toggle-button [(toggled)]="Options.openTop"></toggle-button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-6 text-right">Customized</div>
+                <div class="col-sm-6">
+                    <toggle-button [(toggled)]="Options.customized"></toggle-button>
+                </div>
             </div>
         </div>
-        <div class="col-sm-4">
-            <div class="form-group">
-                <label class="control-label" for="Company">Model</label>
-                <select id="Company" class="form-control" name="Company">
-                    <option value="small">X9</option>
-                    <option value="medium">320 D</option>
-                    <option value="large">HL350</option>
-                </select>
+        <hr />
+        <div class="row">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Pickup Location</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <location-search [caption]="cityorzip"></location-search>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="col-sm-6 text-right">
-                Running Condition
+        <div class="row">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Drop Location</h2>
+                </div>
             </div>
-            <div class="col-sm-6">
-                <toggle-button [(toggled)]="Options.runningCondition"></toggle-button>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="col-sm-6 text-right">
-                Open Top
-            </div>
-            <div class="col-sm-6">
-                <toggle-button [(toggled)]="Options.openTop"></toggle-button>
+            <div class="row">
+                <div class="col-sm-6">
+                    <location-search [caption]="cityorzip"></location-search>
+                </div>
             </div>
         </div>
-        <div class="col-sm-4">
-            <div class="col-sm-6 text-right">Customized</div>
-            <div class="col-sm-6">
-                <toggle-button [(toggled)]="Options.customized"></toggle-button>
+        <div class="row">
+            <div class="col-sm-12 text-right">
+                <button class="btn btn-success btn-lg">Proceed</button>
             </div>
         </div>
     </div>

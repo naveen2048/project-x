@@ -1,5 +1,4 @@
 import { Component, OnInit ,ViewChild, ElementRef,NgZone} from '@angular/core';
-import {} from '@types/googlemaps';
 import {MapsAPILoader } from '@agm/core';
 @Component({
   selector: 'app-shipments-filter-section',

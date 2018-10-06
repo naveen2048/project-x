@@ -8,6 +8,8 @@ import { ToggleButton } from '../../shared/toggle-button';
 })
 export class WhatAreYouShippingComponent implements OnInit, AfterViewInit  {
 
+  cityorzip:string = "city or zip";
+  
   constructor() { }
   Options: any = {
     runningCondition : false,
