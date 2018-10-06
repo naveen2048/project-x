@@ -5,7 +5,7 @@ import { Component, Input, Output, style, EventEmitter } from "@angular/core";
   template: `
    <label class="switch">
    <input type="checkbox" (change)="onChange()">
-   <span class="slider round"></span>
+   <span class="slider round">{{description}}</span>
    </label>
   `,
   styles: [
@@ -13,7 +13,7 @@ import { Component, Input, Output, style, EventEmitter } from "@angular/core";
       .switch {
         position: relative;
         display: inline-block;
-        width: 60px;
+        min-width: 60px;
         height: 34px;
       }
 
@@ -77,6 +77,8 @@ export class ToggleButton {
   @Input()
   description: string;
 
+  @Input() toggled:boolean;
+
   @Input()
   set toggle(checked: boolean) {
     this.isChecked = checked;
@@ -84,10 +86,10 @@ export class ToggleButton {
   }
 
   @Output()
-  toggleEvent = new EventEmitter<boolean>();
+  toggledChange = new EventEmitter<boolean>();
 
   onChange() {
-    let value = (this.isChecked = !this.isChecked);
-    this.toggleEvent.emit(value);
+    this.toggled = (this.isChecked = !this.isChecked);
+    this.toggledChange.emit(this.toggled);
   }
 }

@@ -9,7 +9,12 @@ import { ToggleButton } from '../../shared/toggle-button';
 export class WhatAreYouShippingComponent implements OnInit, AfterViewInit  {
 
   constructor() { }
-  runningCondition:boolean;
+  Options: any = {
+    runningCondition : false,
+    openTop:true,
+    customized:false
+  }
+  
 
   @ViewChildren(ToggleButton)
   private toggle: QueryList<ToggleButton>;

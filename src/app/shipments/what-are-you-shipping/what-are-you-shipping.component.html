@@ -34,13 +34,26 @@
     </div>
     <div class="row">
         <div class="col-sm-4">
-            <toggle-button description="Running condition"></toggle-button>
+            <div class="col-sm-6 text-right">
+                Running Condition
+            </div>
+            <div class="col-sm-6">
+                <toggle-button [(toggled)]="Options.runningCondition"></toggle-button>
+            </div>
         </div>
         <div class="col-sm-4">
-            <toggle-button description="Hard top"></toggle-button>
+            <div class="col-sm-6 text-right">
+                Open Top
+            </div>
+            <div class="col-sm-6">
+                <toggle-button [(toggled)]="Options.openTop"></toggle-button>
+            </div>
         </div>
         <div class="col-sm-4">
-            <toggle-button description="Customizied"></toggle-button>
+            <div class="col-sm-6 text-right">Customized</div>
+            <div class="col-sm-6">
+                <toggle-button [(toggled)]="Options.customized"></toggle-button>
+            </div>
         </div>
     </div>
 </div>

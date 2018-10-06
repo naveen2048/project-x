@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidebarModule } from "ng-sidebar";
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { Ng5BreadcrumbModule, BreadcrumbService } from 'ng5-breadcrumb';
+import { UiSwitchModule } from 'ngx-ui-switch';
 
 @NgModule({
   declarations: [AppComponent, Components, SideBarComponent],
@@ -20,6 +21,7 @@ import { Ng5BreadcrumbModule, BreadcrumbService } from 'ng5-breadcrumb';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    UiSwitchModule,
     Ng5BreadcrumbModule.forRoot(),
     RouterModule.forRoot(rootRoutes, { useHash: true }),
     SidebarModule.forRoot()
