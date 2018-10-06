@@ -8,6 +8,7 @@ import { UiSwitchModule } from "ngx-toggle-switch";
 import { HeaderTitleComponent } from "./header-title";
 import { ToggleButton } from "./toggle-button";
 import { LocationSearchComponent } from "./location-search";
+import { Globals } from "./global-variables";
 
 export const SharedComponents: any[] = [
   HeaderTitleComponent,
@@ -26,6 +27,6 @@ export const SharedComponents: any[] = [
   ],
   declarations: SharedComponents,
   exports: SharedComponents,
-  providers:[]
+  providers:[Globals]
 })
 export class SharedModule {}

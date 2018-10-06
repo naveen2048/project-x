@@ -4,11 +4,13 @@ import { ShipComponent } from './ship/ship.component';
 import { ShipmentInformationComponent } from './shipment-information/shipment-information.component';
 import { ShipListingComponent } from './ship-listing/ship-listing.component';
 import { WhatAreYouShippingComponent } from './what-are-you-shipping/what-are-you-shipping.component';
+import { PricingSuggestComponent } from './pricing-suggest/pricing-suggest.component';
 
 export const ShipmentsRoutes: Routes = [
     { path:'' , redirectTo:'shipments', pathMatch:'full' },
     { path:'shipments', component: ShipmentsComponent },
     { path:'ship/:d', component: ShipComponent },
     { path:'ship-info/:d', component: ShipListingComponent },
-    { path:'what-you-shipping/:d', component: WhatAreYouShippingComponent }
+    { path:'what-you-shipping/:d', component: WhatAreYouShippingComponent },
+    { path:'pricing-suggest', component: PricingSuggestComponent }
 ];

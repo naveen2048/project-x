@@ -16,6 +16,8 @@ import { WhatAreYouShippingComponent } from "./what-are-you-shipping/what-are-yo
 import { HeaderTitleComponent } from '../shared/header-title';
 import { ToggleButton } from '../shared/toggle-button';
 import { LocationSearchComponent } from '../shared/location-search';
+import { PricingSuggestComponent } from "./pricing-suggest/pricing-suggest.component";
+
 
 export const Components = [
   ShipmentsComponent, 
@@ -28,7 +30,8 @@ export const Components = [
   WhatAreYouShippingComponent,
   HeaderTitleComponent,
   ToggleButton,
-  LocationSearchComponent
+  LocationSearchComponent,
+  PricingSuggestComponent
 ];
 
 @NgModule({

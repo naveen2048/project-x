@@ -9,6 +9,7 @@ import { TabModule } from 'angular-tabs-component';
 import { UiSwitchModule } from 'ngx-ui-switch';
 
 //Internal modules
+import { Globals } from '../shared/global-variables';
 
 @NgModule({
   imports: [
@@ -19,6 +20,7 @@ import { UiSwitchModule } from 'ngx-ui-switch';
     RouterModule.forChild(ShipmentsRoutes)
   ],
   declarations: [],
+  providers:[Globals],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ShipmentsModule { }
