@@ -8,6 +8,9 @@ body{
 .form {
     background: #fff !important;
 }
+hr {
+    border-top: 1px solid #212b5a !important;
+}
 #top-bar.animated-header {
     padding: 20px 0 0px 20px;
     background: #212b5a;
