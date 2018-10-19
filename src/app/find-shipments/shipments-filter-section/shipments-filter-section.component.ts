@@ -11,33 +11,33 @@ export class ShipmentsFilterSectionComponent implements OnInit {
   constructor(private mapsAPILoader:MapsAPILoader,private ngZone:NgZone) { }
 
   ngOnInit() {
-    this.mapsAPILoader.load().then(
-      ()=>{
-        let fromautocomplete=new google.maps.places.Autocomplete(this.fromLocation.nativeElement);
+    // this.mapsAPILoader.load().then(
+    //   ()=>{
+    //     let fromautocomplete = new google.maps.places.Autocomplete(this.fromLocation.nativeElement);
 
-        fromautocomplete.addListener("place_changed",()=>{
-          this.ngZone.run(()=>{
-            let place:google.maps.places.PlaceResult=fromautocomplete.getPlace();
-            if(place.geometry===undefined || place.geometry===null)
-            {
-              return;
-            }
-          })
-        })
+    //     fromautocomplete.addListener("place_changed",()=>{
+    //       this.ngZone.run(()=>{
+    //         let place:google.maps.places.PlaceResult=fromautocomplete.getPlace();
+    //         if(place.geometry===undefined || place.geometry===null)
+    //         {
+    //           return;
+    //         }
+    //       })
+    //     })
 
-        let toautocomplete=new google.maps.places.Autocomplete(this.toLocation.nativeElement);
+    //     let toautocomplete=new google.maps.places.Autocomplete(this.toLocation.nativeElement);
 
-        toautocomplete.addListener("place_changed",()=>{
-          this.ngZone.run(()=>{
-            let place:google.maps.places.PlaceResult=toautocomplete.getPlace();
-            if(place.geometry===undefined || place.geometry===null)
-            {
-              return;
-            }
-          })
-        })
-      }
-    )
+    //     toautocomplete.addListener("place_changed",()=>{
+    //       this.ngZone.run(()=>{
+    //         let place:google.maps.places.PlaceResult=toautocomplete.getPlace();
+    //         if(place.geometry===undefined || place.geometry===null)
+    //         {
+    //           return;
+    //         }
+    //       })
+    //     })
+    //   }
+    // )
   }
 
 }
